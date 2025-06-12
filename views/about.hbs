@@ -1,0 +1,7 @@
+<h1>{{ aboutpage_label.title }}</h1>
+<img src="{{aboutpage_label.image}}" alt="image" width="600">
+<ul>
+    {{#each aboutpage_label.links }}
+        <li><a href="{{this.url}}">{{ this.title }}</a></li>
+    {{/each}}
+</ul>

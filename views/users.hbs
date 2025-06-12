@@ -1,0 +1,23 @@
+
+<h1>{{ title }}</h1>
+
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>N</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each users}}
+        <tr>
+            <td>{{ inc @index }}</td>
+            <td>{{ this.name }}</td>
+            <td>{{ this.email }}</td>
+            <td>{{ this.age }}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
