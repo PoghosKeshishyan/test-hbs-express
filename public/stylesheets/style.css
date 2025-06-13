@@ -21,11 +21,3 @@ main {
 a {
   color: #00B7FF;
 }
-
-header, footer {
-  background: #333;
-}
-
-header a, footer {
-  color: #fff;
-}

@@ -1,0 +1,12 @@
+header {
+  background: #333;
+}
+
+header a {
+  color: #fff;
+}
+
+header a.active {
+    color: red;
+  font-weight: bold;
+}

@@ -7,7 +7,8 @@ router.get('/', function(req, res, next) {
   res.render('users', {
     title: 'Users',
     users: users,
-    styles: '<link rel="stylesheet" href="/stylesheets/users.css" />'
+    styles: '<link rel="stylesheet" href="/stylesheets/users.css" />',
+    currentPath: req.originalUrl
   })
 });
 
