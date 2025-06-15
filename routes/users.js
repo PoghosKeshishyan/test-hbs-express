@@ -12,4 +12,20 @@ router.get('/', function(req, res, next) {
   })
 });
 
+router.get('/:id', function(req, res) {
+  const id = req.params.id;
+  const user = users.find(u => u.id === parseInt(id));
+
+  if (!user) {
+    return res.status(404).send('User not found');
+  }
+
+  res.render('user-view', {
+    title: 'User Details - ' + user.name,
+    user,
+    currentPath: req.originalUrl
+  });
+});
+
+
 module.exports = router;

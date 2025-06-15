@@ -8,6 +8,7 @@
             <th>Name</th>
             <th>Email</th>
             <th>Age</th>
+            <th>Details</th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,11 @@
             <td>{{ this.name }}</td>
             <td>{{ this.email }}</td>
             <td>{{ this.age }}</td>
+            <td>
+                <a href="/users/{{ this.id }}">
+                    go
+                </a>
+            </td>
         </tr>
         {{/each}}
     </tbody>
